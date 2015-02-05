@@ -78,6 +78,14 @@ def main(argv):
 
 			br.hset(key, hkey, val)
 
+	elif(type == 'zset'):
+
+		zval = r.zrange(key, 0 , -1);
+    
+        	for v in zval:
+            
+            		br.zadd(key, 0, v);
+
 	elif(type == 'list'):
 
 		val = r.lrange(key, 0 , -1)
