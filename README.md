@@ -7,7 +7,7 @@ A Command-line Utility written in Python to migrate Redis Keys from 1 instance o
 
 ###Supported Data Types
 
-Currently, v1 only supports `Hash`, `List`, `Set`, & `String`
+Currently, v1 only supports `Hash`, `List`, `Set`, `ZSet`, & `String`
 
 ###Sample Usage
 `$ python portdis.py -d 127.0.0.1 -x 6388 -f 2 -o 127.0.0.1 -y 9998 -s 3 -k '*PREFIX:foo*'`
